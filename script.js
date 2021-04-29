@@ -34,6 +34,19 @@ const lessonsRef = document.querySelector(".lessons-ref");
 const contactRef = document.querySelector(".contact-ref");
 const contact2Ref = document.querySelector(".contact-ref2");
 
+// initialize variables to how long Brad has been playing, teaching
+const homeAges = document.querySelector(".home-ages");
+const aboutAge = document.querySelector(".about-age");
+const aboutAge2 = document.querySelector(".about-age2");
+
+const startPlay = new Date("1989/1/15");
+const startTeach = new Date("1997/4/25");
+let cur = new Date();
+let diffPlay = cur - startPlay; // This is the difference in milli
+let diffTeach = cur - startTeach;
+let yearsPlaying = Math.floor(diffPlay / 31557600000);
+let yearsTeaching = Math.floor(diffTeach / 31557600000);
+
 dropBtn.addEventListener("click", function (e) {
   e.preventDefault();
 
@@ -240,6 +253,21 @@ modalBtn.addEventListener("click", function (e) {
 });
 
 window.addEventListener("load", function () {
+  homeAges.textContent = `Hi! My name is Brad Barnes. I've been a guitar player for ${yearsPlaying} years and a guitar teacher for ${yearsTeaching} years.`;
+
+  aboutAge.textContent = `From his earliest days as a beginning guitarist ${yearsPlaying} years ago, Brad
+  knew he wanted to be a teacher. There is just nothing like listening
+  to someone's guitar dreams and helping them get there step by step.
+  Some people get all excited about the idea of playing guitar but get
+  sidelined by the sometimes confusing and overwhelming process of how
+  to actually develop the skill that they are so excited about.`;
+
+  aboutAge2.textContent = `Brad is one of those rare people that LOVES breaking down the
+  process to bite-sized pieces and walking students through each step
+  until can truly perform each new skill. He can't make you practice,
+  but if you're like so many students of his over the last ${yearsTeaching} years,
+  you'll WANT TO PRACTICE!`;
+
   //   console.log(document.querySelector("html").clientWidth < 600);
   if (document.querySelector("html").clientWidth < 650) {
     setTimeout(function () {
@@ -286,3 +314,6 @@ contact2Ref.addEventListener("click", function (e) {
   contact.classList.remove("main-hide");
   map.classList.add("main-hide");
 });
+
+console.log(yearsPlaying);
+console.log(yearsTeaching);
