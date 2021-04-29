@@ -328,7 +328,7 @@ main {
 
 #contact input[type="text"],
 #contact input[type="email"],
-#contact input[type="phone"] {
+#contact input[type="tel"] {
   margin-top: 5px;
   padding: 1.5%;
   border-radius: 5px;
