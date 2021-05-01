@@ -281,8 +281,24 @@ main {
   margin-bottom: 5%;
 }
 
+#lessons ul {
+  /* font-size: 1.rem; */
+  font-weight: bold;
+  line-height: 1.4rem;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
 .no-list-style {
   list-style-type: none;
+}
+
+.no-list-style a {
+  background-color: #ede9e9;
+  line-height: 2.5rem;
+  padding: 2.5%;
+  border-radius: 5px;
+  margin-bottom: 3%;
 }
 
 #lessons a {
@@ -293,6 +309,24 @@ main {
 #lessons a:link,
 #lessons a:visited {
   color: rgba(12, 12, 12, 1);
+}
+
+.transform-text {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.transform-text-2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.transform-text-3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 7%;
 }
 
 .welcome {
