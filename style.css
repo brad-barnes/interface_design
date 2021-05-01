@@ -585,3 +585,66 @@ footer ul li a {
     font-size: 1rem;
   }
 }
+
+@media only screen and (max-width: 415px) {
+  #title {
+    font-size: 1.2rem;
+    max-width: 250px;
+    padding-top: 3px;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome {
+    font-size: 1.7rem;
+  }
+
+  .guitar-lessons {
+    font-size: 1.7rem;
+    /* color: rgb(225, 93, 37); */
+  }
+
+  .brad-barnes {
+    font-size: 1.95rem;
+  }
+
+  #home h1 {
+    margin-bottom: 10%;
+  }
+
+  .no-list-style a {
+    background-color: none;
+    line-height: 1.9rem;
+    padding: 0.5%;
+    border-radius: 5px;
+    font-size: 0.85rem;
+
+    /* margin-bottom: 50px; */
+  }
+
+  .mobile-responsive {
+    clear: both;
+  }
+
+  #lessons h1 {
+    font-size: 2.1rem;
+  }
+
+  #about h1 {
+    font-size: 2.1rem;
+  }
+
+  #contact h1 {
+    font-size: 2.1rem;
+  }
+
+  #map h1 {
+    font-size: 2.1rem;
+  }
+
+  footer ul:first-child {
+    font-size: 0.8rem;
+  }
+}
