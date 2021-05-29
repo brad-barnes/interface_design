@@ -8,6 +8,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body button {
+  cursor: pointer;
+}
+
 body p {
   font-size: 1.1rem;
 }
@@ -228,13 +232,18 @@ aside input[type="email"] {
   margin-bottom: 20px;
 }
 
-button {
+button,
+.mainSubmit {
   margin-top: 25px;
   font-size: 1.5rem;
   padding: 5%;
   border-radius: 7px;
   background-color: rgb(60, 59, 59);
   color: #fefefe;
+}
+
+#mc-embedded-subscribe:active {
+  box-shadow: inset 3px 3px 3px rgb(176, 175, 175);
 }
 
 aside label {
@@ -360,15 +369,16 @@ main {
   font-size: 2.5rem;
 }
 
-#contact-button {
+#contact-btn {
   box-shadow: 3px 3px 3px lightgray;
+  cursor: pointer;
 }
 
-#contact-button:active {
+#contact-btn:active {
   box-shadow: inset 3px 3px 3px gray;
 }
 
-#contact-button:focus {
+#contact-btn:focus {
   outline: none;
 }
 
@@ -402,7 +412,7 @@ main {
   width: 90%;
 }
 
-#contact-button {
+#contact-btn {
   margin-top: 30px;
   font-size: 1.5rem;
   padding: 2%;

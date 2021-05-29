@@ -23,7 +23,7 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="modal" class="modal">
@@ -31,22 +31,137 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
         <span class="close">&times;</span>
         <div class="modal-content">
           <h2>Sign Up for My Exclusive Mailing List!</h2>
-          <form>
+          <!-- <form
+            action="https://formsubmit.co/bradbarnesguitar@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_next" value="index.html" />
+
             <label for="fName">First Name:</label>
             <br />
-            <input type="text" id="fName" name="fName" />
+            <input type="text" id="fName" name="fName" required />
             <br />
             <label for="lName">Last Name: </label>
             <br />
-            <input type="text" id="lName" name="lName" />
+            <input type="text" id="lName" name="lName" required />
             <br />
             <label for="email">Email: </label>
             <br />
-            <input type="email" id="email" name="email" />
-            <br />
-            <button class="modalSubmit">Subscribe</button>
+            <input type="email" id="email" name="email" required />
+            <br /> -->
+          <!-- <button class="modalSubmit">Subscribe</button> -->
+          <!-- <button type="submit">Subscribe</button>
             <p class="success"></p>
-          </form>
+          </form> -->
+          <link
+            href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <style type="text/css">
+            #mc_embed_signup {
+              background: #fff;
+              clear: left;
+              font: 14px Helvetica, Arial, sans-serif;
+            }
+            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup">
+            <form
+              action="https://bradbarnesguitar.us17.list-manage.com/subscribe/post?u=e407471ca4b51ff5f873e0ab4&amp;id=3d67b0027f"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+              novalidate
+            >
+              <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+                <div class="indicates-required">
+                  <span class="asterisk">*</span> indicates required
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-FNAME">First Name </label>
+                  <input
+                    type="text"
+                    value=""
+                    name="FNAME"
+                    class=""
+                    id="mce-FNAME"
+                  />
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-LNAME">Last Name </label>
+                  <input
+                    type="text"
+                    value=""
+                    name="LNAME"
+                    class=""
+                    id="mce-LNAME"
+                  />
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL"
+                    >Email Address <span class="asterisk">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    value=""
+                    name="EMAIL"
+                    class="required email"
+                    id="mce-EMAIL"
+                  />
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div
+                    class="response"
+                    id="mce-error-response"
+                    style="display: none"
+                  ></div>
+                  <div
+                    class="response"
+                    id="mce-success-response"
+                    style="display: none"
+                  ></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div
+                  style="position: absolute; left: -5000px"
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_e407471ca4b51ff5f873e0ab4_3d67b0027f"
+                    tabindex="-1"
+                    value=""
+                  />
+                </div>
+                <div class="clear">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="button"
+                    style="
+                      margin-top: 25px;
+                      font-size: 1.5rem;
+                      padding: 5%;
+                      height: 60px;
+                      border-radius: 7px;
+                      background-color: rgb(60, 59, 59);
+                      color: #fefefe;
+                      outline: none;
+                    "
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!--End mc_embed_signup-->
         </div>
       </div>
     </div>
@@ -57,18 +172,21 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
 
         <div id="hero">
           <img
-            src="BBGS-hero.png"
+            src="images/BBGS-hero.png"
             alt="comic book style graphic of guy standing between his garage and a stadium full of fans"
           />
         </div>
         <div id="hero-mobile">
           <img
-            src="hero-mobile.png"
+            src="images/hero-mobile.png"
             alt="comic book style graphic of guy standing between his garage and a stadium full of fans"
           />
         </div>
         <span class="burger-menu"
-          ><img id="dropbtn" src="hamburger-menu-icon.png" alt="hamburger icon"
+          ><img
+            id="dropbtn"
+            src="images/hamburger-menu-icon.png"
+            alt="hamburger icon"
         /></span>
       </header>
       <nav>
@@ -94,7 +212,7 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
       </div>
       <aside>
         <h2>Sign Up for My Exclusive Mailing List!</h2>
-        <form>
+        <!-- <form>
           <label for="fNameAside">First Name:</label>
           <br />
           <input type="text" id="fNameAside" name="fNameAside" />
@@ -109,7 +227,114 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
           <br />
           <button class="mainSubmit">Subscribe</button>
           <p class="mainSuccess"></p>
-        </form>
+        </form> -->
+        <!-- Begin Mailchimp Signup Form -->
+        <link
+          href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <style type="text/css">
+          #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+          }
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+          <form
+            action="https://bradbarnesguitar.us17.list-manage.com/subscribe/post?u=e407471ca4b51ff5f873e0ab4&amp;id=3d67b0027f"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <h2>Subscribe</h2>
+              <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-FNAME">First Name </label>
+                <input
+                  type="text"
+                  value=""
+                  name="FNAME"
+                  class="chimpFName"
+                  id="mce-FNAME"
+                />
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-LNAME">Last Name </label>
+                <input
+                  type="text"
+                  value=""
+                  name="LNAME"
+                  class="chimpLName"
+                  id="mce-LNAME"
+                />
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL"
+                  >Email Address <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email chimpEmail"
+                  id="mce-EMAIL"
+                />
+              </div>
+              <div id="mce-responses" class="clear">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_e407471ca4b51ff5f873e0ab4_3d67b0027f"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="clear">
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                  style="
+                    margin-top: 25px;
+                    font-size: 1.5rem;
+                    padding: 5%;
+                    height: 60px;
+                    border-radius: 7px;
+                    background-color: rgb(60, 59, 59);
+                    color: #fefefe;
+                    outline: none;
+                  "
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!--End mc_embed_signup-->
       </aside>
       <main>
         <div id="home">
@@ -118,7 +343,7 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
             <span class="guitar-lessons">Guitar Lessons</span> with
             <span class="brad-barnes">Brad Barnes!</span>
           </h1>
-          <img src="brad.jpg" alt="photo of Brad with guitar on stage" />
+          <img src="images/brad.jpg" alt="photo of Brad with guitar on stage" />
           <h3>Welcome Aboard!</h3>
           <p class="home-ages">
             Hi! My name is Brad Barnes. I've been a guitar player for years and
@@ -156,7 +381,7 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
         <div id="lessons" class="main-hide">
           <h1>Guitar Lessons</h1>
           <img
-            src="happyguitarstudent.jpeg"
+            src="images/happyguitarstudent.jpeg"
             alt="a picture of a happy guitar student in Brad Barnes Guitar Studio with Brad's puppy dog laying at her feet"
           />
 
@@ -259,7 +484,7 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
         <div id="about" class="main-hide">
           <h1>About Me</h1>
           <img
-            src="Bradwithguitar.jpg"
+            src="images/Bradwithguitar.jpg"
             alt="brad in the studio with his electric guitar"
           />
           <p class="transform-text">
@@ -336,15 +561,24 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
 
         <div id="contact" class="main-hide">
           <h1>Contact Brad!</h1>
-          <form>
+          <form
+            action="https://formsubmit.co/bradbarnesguitar@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="BBGS Contact Submission"
+            />
+
             <label for="contact-fName">First Name: </label><br />
-            <input type="text" id="contact-fName" /> <br />
+            <input type="text" id="contact-fName" required /> <br />
             <label for="contact-lName">Last Name: </label><br />
             <input type="text" id="contact-lName" /><br />
             <label for="contact-phone">Phone: </label><br />
             <input type="tel" id="contact-phone" /><br />
             <label for="contact-email">Email</label><br />
-            <input type="email" id="contact-email" /><br />
+            <input type="email" id="contact-email" required /><br />
             <textarea
               id="contact-textarea"
               rows="10"
@@ -352,23 +586,26 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
               placeholder="Leave your message for Brad HERE..."
             ></textarea
             ><br />
-            <input type="button" id="contact-button" value="SUBMIT FORM" />
+            <!-- <input type="submit" id="contact-button" value="SUBMIT FORM" /> -->
+            <input type="submit" id="contact-btn" value="SUBMIT FORM" />
+
             <p class="contact-success"></p>
           </form>
         </div>
         <div id="map" class="main-hide">
           <div class="mapIcon">
             <h1>Map</h1>
-            <img src="location_icon.svg" alt="map icon" />
+            <img src="images/location_icon.svg" alt="map icon" />
           </div>
           <h3>
             Here's a map to my studio so you can estimate the distance and
             decide if you want In Studio or Online lessons:
           </h3>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.323682548027!2d-96.7924976!3d33.047944250000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c231e26688ae1%3A0xae18b085b625ec78!2s3700%20Preston%20Rd%2C%20Plano%2C%20TX%2075093!5e0!3m2!1sen!2sus!4v1619669363696!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.42101188062!2d-96.82902794860833!3d33.045381180798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c23666052c7ff%3A0x326b3ce0d9259d47!2sParkwood%20Blvd%20%26%20Parker%20Rd%2C%20Plano%2C%20TX%2075093!5e0!3m2!1sen!2sus!4v1622274308948!5m2!1sen!2sus"
             width="600"
             height="450"
+            style="border: 0"
             allowfullscreen=""
             loading="lazy"
           ></iframe>
@@ -384,18 +621,18 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
           <li><a href="#map">Map</a></li>
         </ul>
         <ul>
-          <li>Brad Barnes</li>
-          <li>IMED 1341.250</li>
-          <li>SEMESTER PROJECT</li>
-          <li>4-29-2021</li>
+          <li>Webmaster: Brad Barnes</li>
+          <li>5-28-2021</li>
           <li>
-            <a href="mailto:bbarnes21@collin.edu">bbarnes21@collin.edu</a>
+            <a href="mailto:bradbarnesguitar@gmail.com"
+              >bradbarnesguitar@gmail.com</a
+            >
           </li>
           <li id="privacyLink"><a href="privacy.html">PRIVACY POLICY</a></li>
         </ul>
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>

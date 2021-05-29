@@ -40,6 +40,14 @@ const homeAges = document.querySelector(".home-ages");
 const aboutAge = document.querySelector(".about-age");
 const aboutAge2 = document.querySelector(".about-age2");
 
+// constant for Subscribe form
+const formSubmit = document.querySelectorAll(".validate");
+
+// constants for desktop and tablet Subscribe form fields
+const chimpFName = document.querySelector(".chimpFName");
+const chimpLName = document.querySelector(".chimpLName");
+const chimpEmail = document.querySelector(".chimpEmail");
+
 // set constants and variables related to finding how many years
 // Brad has been playing and teaching compared to whatever
 // today's date is
@@ -223,6 +231,23 @@ modalClose.addEventListener("click", function (e) {
   container.classList.remove("is-blurred");
 });
 
+for (let i = 0; i < formSubmit.length; i++) {
+  formSubmit[i].addEventListener(
+    "submit",
+    function () {
+      // closes modal window and unblurs everything else
+      modal.style.display = "none";
+      container.classList.remove("is-blurred");
+      // clears text field from full screen subscriber form
+      setTimeout(function () {
+        chimpFName.value = "";
+        chimpLName.value = "";
+        chimpEmail.value = "";
+      });
+    },
+    200
+  );
+}
 // event listener for window so user can click outside of the window
 // and close SUBSCRIBE!
 window.addEventListener("click", function (e) {
@@ -233,72 +258,72 @@ window.addEventListener("click", function (e) {
 });
 
 // event listener for full site form button
-formBtn.addEventListener("click", function (e) {
-  e.preventDefault();
+// formBtn.addEventListener("click", function (e) {
+//   e.preventDefault();
 
-  // adds SUCCESS text under form button when button is pressed
-  mainSuccess.textContent = "SUCCESSFUL SUBMISSION!";
+//   // adds SUCCESS text under form button when button is pressed
+//   mainSuccess.textContent = "SUCCESSFUL SUBMISSION!";
 
-  // a TIMER to wait 3 seconds then empties inputs
-  // etc to SIMULATE FORM SUBMISSION
-  setTimeout(function () {
-    fNameAside.value = "";
-    lNameAside.value = "";
-    emailAside.value = "";
+//   // a TIMER to wait 3 seconds then empties inputs
+//   // etc to SIMULATE FORM SUBMISSION
+//   setTimeout(function () {
+//     fNameAside.value = "";
+//     lNameAside.value = "";
+//     emailAside.value = "";
 
-    // and removes the modal if it happens to be open
-    modal.style.display = "none";
-    container.classList.remove("is-blurred");
-    // and removes the SUCCESS text
-    mainSuccess.textContent = "";
-  }, 3000);
-});
+//     // and removes the modal if it happens to be open
+//     modal.style.display = "none";
+//     container.classList.remove("is-blurred");
+//     // and removes the SUCCESS text
+//     mainSuccess.textContent = "";
+//   }, 3000);
+// });
 
 // add event listener for CONTACT BUTTON on CONTACT PAGE
-contactBtn.addEventListener("click", function (e) {
-  e.preventDefault();
+// contactBtn.addEventListener("click", function (e) {
+//   e.preventDefault();
 
-  // adds SUCCESS text under form button when button is pressed
-  contactSuccess.textContent = "SUCCESSFUL SUBMISSION!";
+//   // adds SUCCESS text under form button when button is pressed
+//   contactSuccess.textContent = "SUCCESSFUL SUBMISSION!";
 
-  // a TIMER to wait 3 seconds then empties inputs
-  // etc to SIMULATE FORM SUBMISSION
-  setTimeout(function () {
-    contactFName.value = "";
-    contactLName.value = "";
-    contactPhone.value = "";
-    contactEmail.value = "";
-    contactTextArea.value = "";
+//   // a TIMER to wait 3 seconds then empties inputs
+//   // etc to SIMULATE FORM SUBMISSION
+//   setTimeout(function () {
+//     contactFName.value = "";
+//     contactLName.value = "";
+//     contactPhone.value = "";
+//     contactEmail.value = "";
+//     contactTextArea.value = "";
 
-    // and removes the modal if it happens to be open
-    modal.style.display = "none";
-    container.classList.remove("is-blurred");
-    // and removes the SUCCESS text
-    contactSuccess.textContent = "";
-  }, 3000);
-});
+//     // and removes the modal if it happens to be open
+//     modal.style.display = "none";
+//     container.classList.remove("is-blurred");
+//     // and removes the SUCCESS text
+//     contactSuccess.textContent = "";
+//   }, 3000);
+// });
 
 // add event listener for Subscribe MODAL
-modalBtn.addEventListener("click", function (e) {
-  e.preventDefault();
+// modalBtn.addEventListener("click", function (e) {
+//   e.preventDefault();
 
-  // adds SUCCESS text under form button when button is pressed
-  success.textContent = "SUCCESSFUL SUBMISSION!";
+//   // adds SUCCESS text under form button when button is pressed
+//   success.textContent = "SUCCESSFUL SUBMISSION!";
 
-  // a TIMER to wait 3 seconds then empties inputs
-  // etc to SIMULATE FORM SUBMISSION
-  setTimeout(function () {
-    fName.value = "";
-    lName.value = "";
-    email.value = "";
+//   // a TIMER to wait 3 seconds then empties inputs
+//   // etc to SIMULATE FORM SUBMISSION
+//   setTimeout(function () {
+//     fName.value = "";
+//     lName.value = "";
+//     email.value = "";
 
-    // and removes the modal if it happens to be open
-    modal.style.display = "none";
-    container.classList.remove("is-blurred");
-    // and removes the SUCCESS text
-    success.textContent = "";
-  }, 3000);
-});
+//     // and removes the modal if it happens to be open
+//     modal.style.display = "none";
+//     container.classList.remove("is-blurred");
+//     // and removes the SUCCESS text
+//     success.textContent = "";
+//   }, 3000);
+// });
 
 // add event listener for PAGE LOADS
 window.addEventListener("load", function () {

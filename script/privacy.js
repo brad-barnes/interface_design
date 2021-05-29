@@ -11,6 +11,5 @@ privBtn.addEventListener("click", function (e) {
 
 privBtnFooter.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log("TEST TEST TEST");
   window.location.href = "index.html";
 });
