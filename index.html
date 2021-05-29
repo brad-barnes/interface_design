@@ -24,6 +24,7 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/bbgs_favicon.png" />
   </head>
   <body>
     <div id="modal" class="modal">
@@ -565,21 +566,24 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
             action="https://formsubmit.co/bradbarnesguitar@gmail.com"
             method="POST"
           >
-            <input
-              type="hidden"
-              name="_subject"
-              value="BBGS Contact Submission"
-            />
+            <input type="hidden" name="_subject" value="BBGS Contact Form" />
 
             <label for="contact-fName">First Name: </label><br />
-            <input type="text" id="contact-fName" required /> <br />
+            <input type="text" name="first_name" id="contact-fName" required />
+            <br />
             <label for="contact-lName">Last Name: </label><br />
-            <input type="text" id="contact-lName" /><br />
+            <input type="text" name="last_name" id="contact-lName" /><br />
             <label for="contact-phone">Phone: </label><br />
-            <input type="tel" id="contact-phone" /><br />
+            <input type="tel" name="phone" id="contact-phone" /><br />
             <label for="contact-email">Email</label><br />
-            <input type="email" id="contact-email" required /><br />
+            <input
+              type="email"
+              name="email"
+              id="contact-email"
+              required
+            /><br />
             <textarea
+              name="message"
               id="contact-textarea"
               rows="10"
               cols="50"
@@ -587,9 +591,7 @@ NO FRAMEWORKS WERE USED FOR THIS SITE-->
             ></textarea
             ><br />
             <!-- <input type="submit" id="contact-button" value="SUBMIT FORM" /> -->
-            <input type="submit" id="contact-btn" value="SUBMIT FORM" />
-
-            <p class="contact-success"></p>
+            <input type="submit" id="contact-btn" />
           </form>
         </div>
         <div id="map" class="main-hide">
