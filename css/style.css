@@ -425,21 +425,55 @@ main {
   display: inline-flex;
 }
 
-#map h1 {
+#testimonials h1 {
   font-size: 2.5rem;
   margin-right: 20px;
 }
 
-#map img {
+#testimonials h3 {
+  font-size: 1.7rem;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+#testimonials blockquote {
+  font-size: 1.15rem;
+}
+
+#testimonials a:link {
+  color: black;
+}
+
+#testimonials a:visited {
+  color: black;
+}
+
+#testimonials a:hover {
+  color: black;
+}
+
+#testimonials a:active {
+  color: black;
+}
+
+.testimonial-separator {
+  border-top: 1px solid black;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* #testimonials img {
   max-width: 60%;
 }
 
-#map iframe {
+#testimonials iframe {
   max-width: 90%;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
-}
+} */
 
 footer {
   grid-area: footer;
@@ -636,6 +670,13 @@ footer ul li a {
 
   .mobile-responsive {
     clear: both;
+  }
+
+  #lessons img {
+    float: none;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
   }
 
   #lessons h1 {

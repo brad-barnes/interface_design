@@ -18,7 +18,7 @@ const home = document.getElementById("home");
 const lessons = document.getElementById("lessons");
 const about = document.getElementById("about");
 const contact = document.getElementById("contact");
-const map = document.getElementById("map");
+const testimonials = document.getElementById("testimonials");
 const closeDrop = document.querySelector(".close-drop");
 const contactBtn = document.getElementById("contact-button");
 const contactFName = document.getElementById("contact-fName");
@@ -83,33 +83,43 @@ dropContent.addEventListener("click", function (e) {
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#lessons")) {
       home.classList.add("main-hide");
       lessons.classList.remove("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#about")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.remove("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#contact")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.remove("main-hide");
-      map.classList.add("main-hide");
-    } else if (mainID.includes("#map")) {
+      testimonials.classList.add("main-hide");
+    } else if (mainID.includes("#testimonials")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.remove("main-hide");
+      testimonials.classList.remove("main-hide");
     }
   }
+});
+
+// event listener to re-position screen to include Hero banner after changing
+// pages in nav bar
+window.addEventListener("hashchange", function () {
+  window.scrollTo({
+    top: 100,
+    left: 100,
+    behavior: "smooth",
+  });
 });
 
 // event listener for nav in full screen page view
@@ -129,31 +139,31 @@ nav.addEventListener("click", function (e) {
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#lessons")) {
       home.classList.add("main-hide");
       lessons.classList.remove("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#about")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.remove("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#contact")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.remove("main-hide");
-      map.classList.add("main-hide");
-    } else if (mainID.includes("#map")) {
+      testimonials.classList.add("main-hide");
+    } else if (mainID.includes("#testimonials")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.remove("main-hide");
+      testimonials.classList.remove("main-hide");
     }
   }
 });
@@ -174,31 +184,31 @@ footer.addEventListener("click", function (e) {
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#lessons")) {
       home.classList.add("main-hide");
       lessons.classList.remove("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#about")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.remove("main-hide");
       contact.classList.add("main-hide");
-      map.classList.add("main-hide");
+      testimonials.classList.add("main-hide");
     } else if (mainID.includes("#contact")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.remove("main-hide");
-      map.classList.add("main-hide");
-    } else if (mainID.includes("#map")) {
+      testimonials.classList.add("main-hide");
+    } else if (mainID.includes("#testimonials")) {
       home.classList.add("main-hide");
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
-      map.classList.remove("main-hide");
+      testimonials.classList.remove("main-hide");
     }
   }
 });
@@ -330,7 +340,7 @@ window.addEventListener("load", function () {
   // ALL 3 OF THESE TEXT CONTENTS # OF YEARS
   //TO INSERT CORRECT AGES FOR BRAD
   // AS A TEACHER AND AS A GUITARIST
-  homeAges.textContent = `Hi! My name is Brad Barnes. I've been a guitar player for ${yearsPlaying} years and a guitar teacher for ${yearsTeaching} years.`;
+  homeAges.innerHTML = `Hi! My name is Brad Barnes. I've been a guitar player for ${yearsPlaying} years and a guitar teacher in the <b><u>Plano, Texas</u></b> area for ${yearsTeaching} years.`;
 
   aboutAge.textContent = `From his earliest days as a beginning guitarist ${yearsPlaying} years ago, Brad
   knew he wanted to be a teacher. There is just nothing like listening
@@ -375,7 +385,7 @@ lessonsRef.addEventListener("click", function (e) {
   lessons.classList.remove("main-hide");
   about.classList.add("main-hide");
   contact.classList.add("main-hide");
-  map.classList.add("main-hide");
+  testimonials.classList.add("main-hide");
 });
 
 // event listener for CONTACT clickable text at the end of
@@ -386,7 +396,7 @@ contactRef.addEventListener("click", function (e) {
   lessons.classList.add("main-hide");
   about.classList.add("main-hide");
   contact.classList.remove("main-hide");
-  map.classList.add("main-hide");
+  testimonials.classList.add("main-hide");
 });
 
 // event listener for CONTACT clickable text at end of ABOUT ME
@@ -396,5 +406,5 @@ contact2Ref.addEventListener("click", function (e) {
   lessons.classList.add("main-hide");
   about.classList.add("main-hide");
   contact.classList.remove("main-hide");
-  map.classList.add("main-hide");
+  testimonials.classList.add("main-hide");
 });
