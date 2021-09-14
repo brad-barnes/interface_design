@@ -137,7 +137,7 @@ nav.addEventListener("click", function (e) {
     if (mainID.includes("#home")) {
       home.classList.remove("main-hide");
 
-      home.classList.add("active");
+      // home.classList.add("active");
 
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
@@ -146,7 +146,7 @@ nav.addEventListener("click", function (e) {
     } else if (mainID.includes("#lessons")) {
       home.classList.add("main-hide");
 
-      lessons.classList.add("active");
+      // lessons.classList.add("active");
 
       lessons.classList.remove("main-hide");
       about.classList.add("main-hide");
@@ -155,7 +155,7 @@ nav.addEventListener("click", function (e) {
     } else if (mainID.includes("#about")) {
       home.classList.add("main-hide");
 
-      about.classList.add("active");
+      // about.classList.add("active");
 
       lessons.classList.add("main-hide");
       about.classList.remove("main-hide");
@@ -164,7 +164,7 @@ nav.addEventListener("click", function (e) {
     } else if (mainID.includes("#contact")) {
       home.classList.add("main-hide");
 
-      contact.classList.add("active");
+      // contact.classList.add("active");
 
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
@@ -173,7 +173,7 @@ nav.addEventListener("click", function (e) {
     } else if (mainID.includes("#testimonials")) {
       home.classList.add("main-hide");
 
-      testimonials.classList.add("active");
+      // testimonials.classList.add("active");
 
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
