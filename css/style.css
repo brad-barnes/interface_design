@@ -517,6 +517,10 @@ footer ul li a {
   text-decoration: none;
 }
 
+.footerSpace {
+  margin-top: 20px;
+}
+
 #privacyLink {
   margin-top: 1%;
 }
