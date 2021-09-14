@@ -630,6 +630,23 @@ footer ul li a {
   }
 }
 
+/* Fade In Styling Attempt!!!  */
+.active {
+  animation-name: FadeIn;
+  animation-duration: 0.75s;
+  transition-timing-function: linear;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* END --- Fade In Styling Attempt!!!  */
+
 @media only screen and (max-width: 415px) {
   #title {
     font-size: 1.2rem;

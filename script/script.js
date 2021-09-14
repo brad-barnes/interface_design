@@ -136,30 +136,45 @@ nav.addEventListener("click", function (e) {
     // and add "main-hide" to all other page IDs in the main section
     if (mainID.includes("#home")) {
       home.classList.remove("main-hide");
+
+      home.classList.add("active");
+
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
       testimonials.classList.add("main-hide");
     } else if (mainID.includes("#lessons")) {
       home.classList.add("main-hide");
+
+      lessons.classList.add("active");
+
       lessons.classList.remove("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
       testimonials.classList.add("main-hide");
     } else if (mainID.includes("#about")) {
       home.classList.add("main-hide");
+
+      about.classList.add("active");
+
       lessons.classList.add("main-hide");
       about.classList.remove("main-hide");
       contact.classList.add("main-hide");
       testimonials.classList.add("main-hide");
     } else if (mainID.includes("#contact")) {
       home.classList.add("main-hide");
+
+      contact.classList.add("active");
+
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.remove("main-hide");
       testimonials.classList.add("main-hide");
     } else if (mainID.includes("#testimonials")) {
       home.classList.add("main-hide");
+
+      testimonials.classList.add("active");
+
       lessons.classList.add("main-hide");
       about.classList.add("main-hide");
       contact.classList.add("main-hide");
