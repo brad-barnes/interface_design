@@ -645,6 +645,21 @@ footer ul li a {
     opacity: 1;
   }
 }
+
+.active2 {
+  animation-name: FadeIn2;
+  animation-duration: 0.4s;
+  transition-timing-function: linear;
+}
+
+@keyframes FadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* END --- Fade In Styling Attempt!!!  */
 
 @media only screen and (max-width: 415px) {

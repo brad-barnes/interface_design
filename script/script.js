@@ -116,8 +116,8 @@ dropContent.addEventListener("click", function (e) {
 // pages in nav bar
 window.addEventListener("hashchange", function () {
   window.scrollTo({
-    top: 100,
-    left: 100,
+    top: 0,
+    left: 0,
     behavior: "smooth",
   });
 });
